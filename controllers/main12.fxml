@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainDashboardController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="580.0">
+         <children>
+            <Label text="Business Appointment Schedule">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+         <tabs>
+            <Tab fx:id="homeTab" text="Home      ">
+               <content>
+                  <HBox spacing="20.0">
+                     <children>
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="904.0" prefWidth="370.0">
+                           <children>
+                              <HBox alignment="CENTER" style="-fx-background-color: grey;">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="155.0" text="Appointments By  Type" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxWidth="1.7976931348623157E308" prefHeight="127.0" prefWidth="880.0" spacing="10.0">
+                                 <children>
+                                    <FlowPane HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label fx:id="homeTypeLabel1" text="Formal">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeTypeValueFormal" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label fx:id="homeTypeLabel2" text="Informal">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeTypeValueInformal" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" style="-fx-background-color: grey;">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="180.0" text="Appointments By  Month" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxWidth="1.7976931348623157E308" prefHeight="127.0" prefWidth="880.0" spacing="10.0">
+                                 <children>
+                                    <FlowPane HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="January">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthJanuary" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="Feburary">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthFebruary" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="March">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthMarch" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="Appril">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthApril" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="May">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthMay" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="June">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthJune" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="July">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthJuly" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="Augest">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthAugust" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="610.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="September">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthSeptember" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="710.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="October">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthOctober" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="110.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="November">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthNovember" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="110.0" layoutY="110.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #F0F0F0;">
+                                             <children>
+                                                <Label text="December">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="homeByMonthDecember" layoutX="10.0" layoutY="10.0" text="1503" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </FlowPane.margin>
+                                          </VBox>
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" minWidth="500.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" style="-fx-background-color: grey;">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="180.0" text="Appointments By  Contacts" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <VBox maxWidth="1.7976931348623157E308" minWidth="850.0" prefHeight="200.0" prefWidth="866.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <VBox VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="47.0" prefWidth="580.0">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="378.0" layoutY="24.0" prefHeight="20.0" prefWidth="100.0" text="Jhone">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <TableView fx:id="jhoneTableView" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn fx:id="jhoneTableViewColumnID" prefWidth="98.0" text="Appointment_ID" />
+                                                      <TableColumn fx:id="jhoneTableViewColumnTitle" prefWidth="109.0" text="Title" />
+                                                      <TableColumn fx:id="jhoneTableViewColumnDescription" prefWidth="246.0" text="Description" />
+                                                      <TableColumn fx:id="jhoneTableViewColumnType" prefWidth="95.0" text="Type" />
+                                                      <TableColumn fx:id="jhoneTableViewColumnStartDateTime" prefWidth="128.0" text="Start Date and Time" />
+                                                      <TableColumn fx:id="jhoneTableViewColumnEndDateTime" prefWidth="121.0" text="End Date and Time" />
+                                                      <TableColumn fx:id="jhoneTableViewColumnCustomerID" prefWidth="82.0" text="Customer_ID" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="10.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="47.0" prefWidth="580.0">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="378.0" layoutY="24.0" prefHeight="20.0" prefWidth="100.0" text="Smith">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <TableView fx:id="smithTableView" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn fx:id="smithTaleColumnAppointmentID" prefWidth="105.0" text="Appointment_ID" />
+                                                      <TableColumn fx:id="smithTaleCoulumnAppointmentTitle" prefWidth="132.0" text="Title" />
+                                                      <TableColumn fx:id="smithTaleCoulumnAppointmentDescription" prefWidth="216.0" text="Description" />
+                                                      <TableColumn fx:id="smithTaleCoulumnAppointmentType" prefWidth="95.0" text="Type" />
+                                                      <TableColumn fx:id="smithTaleCoulumnAppointmentStartDateTime" prefWidth="128.0" text="Start Date and Time" />
+                                                      <TableColumn fx:id="smithTaleCoulumnAppointmentEndDateTime" prefWidth="121.0" text="End Date and Time" />
+                                                      <TableColumn fx:id="smithTaleCoulumnAppointmentCustomerID" prefWidth="82.0" text="Customer_ID" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="105.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="47.0" prefWidth="580.0">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="378.0" layoutY="24.0" prefHeight="20.0" prefWidth="100.0" text="Lora">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <TableView fx:id="loraTableView" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn fx:id="loraTableColumnAppointmentID" prefWidth="105.0" text="Appointment_ID" />
+                                                      <TableColumn fx:id="loraTableColumnAppointmentTitle" prefWidth="132.0" text="Title" />
+                                                      <TableColumn fx:id="loraTableColumnAppointmentDescription" prefWidth="216.0" text="Description" />
+                                                      <TableColumn fx:id="loraTableColumnAppointmentType" prefWidth="95.0" text="Type" />
+                                                      <TableColumn fx:id="loraTableColumnAppointmentStartDateTime" prefWidth="128.0" text="Start Date and Time" />
+                                                      <TableColumn fx:id="loraTableColumnAppointmentEndDateTime" prefWidth="121.0" text="End Date and Time" />
+                                                      <TableColumn fx:id="loraTableColumnAppointmentCustomerID" prefWidth="82.0" text="Customer_ID" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab fx:id="appointmentsTab" text="Appointments">
+               <content>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="47.0" prefWidth="580.0">
+                           <children>
+                              <Label prefWidth="100.0" text="Filter By:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="appointmentsFilterMonthToggleButton" mnemonicParsing="false" prefWidth="100.0" text="Month">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="filterAppointmentsToggleGroup" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="appointmentsFilterWeekToggleButton" layoutX="457.0" layoutY="25.0" mnemonicParsing="false" prefWidth="100.0" text="Week" toggleGroup="$filterAppointmentsToggleGroup" />
+                              <RadioButton fx:id="appointmentsFilterAllToggleButton" layoutX="400.0" layoutY="25.0" mnemonicParsing="false" prefWidth="100.0" selected="true" text="All" toggleGroup="$filterAppointmentsToggleGroup" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TableView fx:id="appointmentsFilterTableView" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <columns>
+                                    <TableColumn fx:id="appointmentsFilterID" prefWidth="105.0" text="Appointment_ID" />
+                                    <TableColumn fx:id="appointmentsFilterTitle" prefWidth="87.0" text="Title" />
+                                    <TableColumn fx:id="appointmentsFilterDescription" prefWidth="140.0" text="Description" />
+                                    <TableColumn fx:id="appointmentsFilterLocation" text="Location" />
+                                    <TableColumn fx:id="appointmentsFilterContact" prefWidth="62.0" text="Contact" />
+                                    <TableColumn fx:id="appointmentsFilterType" prefWidth="61.0" text="Type" />
+                                    <TableColumn fx:id="appointmentsFilterStartDateTime" prefWidth="136.0" text="Start Date and Time" />
+                                    <TableColumn fx:id="appointmentsFilterEndDateTime" prefWidth="118.0" text="End Date and Time" />
+                                    <TableColumn fx:id="appointmentsFilterCustomerID" prefWidth="90.0" text="Customer_ID" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="580.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="addAppointment" mnemonicParsing="false" prefWidth="100.0" text="Add" />
+                              <Button fx:id="updateAppointment" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefWidth="100.0" text="Update" />
+                              <Button fx:id="deleteAppointment" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" prefWidth="100.0" text="Delete" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab fx:id="customersTab" text="Customers">
+               <content>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TableView fx:id="customersTableView" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <columns>
+                                    <TableColumn fx:id="customerID" prefWidth="89.0" text="Customer_ID" />
+                                    <TableColumn fx:id="customersName" prefWidth="74.0" text="Name" />
+                                    <TableColumn fx:id="customerCountry" prefWidth="74.0" text="Country" />
+                                    <TableColumn fx:id="customerProvinceState" prefWidth="95.0" text="Province/State" />
+                                    <TableColumn fx:id="customersAddress" prefWidth="95.0" text="Address" />
+                                    <TableColumn fx:id="customersPostalCode" prefWidth="95.0" text="Postal Code" />
+                                    <TableColumn fx:id="customersPhone" prefWidth="95.0" text="Phone" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="580.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="addCustomer" mnemonicParsing="false" prefWidth="100.0" text="Add" />
+                              <Button fx:id="updateCustomer" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefWidth="100.0" text="Update" />
+                              <Button fx:id="deleteCustomer" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" prefWidth="100.0" text="Delete" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

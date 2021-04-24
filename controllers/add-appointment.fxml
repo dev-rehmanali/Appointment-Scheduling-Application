@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddAppointmentController">
+   <children>
+      <Label maxWidth="500.0" text="Appointment" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="ID:" />
+            <TextField fx:id="appointmentIdTextField" editable="false" focusTraversable="false" promptText="Auto-Generated" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="60.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="Title:" />
+            <TextField fx:id="appointmentTitleTextField" promptText="Enter Title" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="60.0" layoutY="125.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="Description:" />
+            <TextField fx:id="appointmentDescriptionTextField" promptText="Enter Description" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="Location:" />
+            <TextField fx:id="appointmentLocationTextField" promptText="Enter Location" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="100.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="Contact:" />
+            <ComboBox fx:id="appointmentContactComboBox" maxWidth="1.7976931348623157E308" prefWidth="150.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="140.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="Type:" />
+            <ComboBox fx:id="appointmentTypeComboBox" maxWidth="1.7976931348623157E308" prefWidth="150.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="100.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="Start:" />
+            <JFXDatePicker fx:id="appointmentStartDateJFXDatePicker" />
+            <JFXTimePicker fx:id="appointmentStartTimeJFXTimePicker" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="60.0" layoutY="266.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="End:" />
+            <JFXDatePicker fx:id="appointmentEndDateJFXDatePicker" />
+            <JFXTimePicker fx:id="appointmentEndTimeJFXTimePicker" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="60.0" layoutY="250.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0">
+         <children>
+            <Label minWidth="100.0" prefWidth="100.0" text="Customer ID:" />
+            <ComboBox fx:id="appointmentCustomerIDComboBox" maxWidth="1.7976931348623157E308" prefWidth="150.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="260.0" maxWidth="500.0" prefHeight="40.0" prefWidth="560.0" spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="appointmentAddButton" mnemonicParsing="false" prefWidth="100.0" text="Add" />
+            <Button fx:id="appointmentCancelButton" layoutX="10.0" layoutY="18.0" mnemonicParsing="false" prefWidth="100.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
